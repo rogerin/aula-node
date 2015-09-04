@@ -1,0 +1,13 @@
+extends ../layout
+
+block content
+	h1 Editar Contato #{contato.nome}
+	p Use o formulario abaixo para cadastrar novo Contato
+	p
+		form(id="form_contato", method="PUT", action="/contatos")
+			label Nome
+				input(type="text", name="nome", value="#{contato.nome}")
+			input(type="hidden", value="#{contato._id}")
+			input(type="submit", value="cadastrar")
+
+

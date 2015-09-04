@@ -1,0 +1,14 @@
+doctype html
+html
+	head
+		title= title
+		link(rel='stylesheet', href='/stylesheets/style.css')
+	body
+		ul
+			li
+				a(href="/contatos") Listar contatos
+			li
+				a(href="/contatos/cadastrar") Novo contato
+
+		block content
+		block javascript

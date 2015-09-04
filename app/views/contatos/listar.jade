@@ -1,0 +1,11 @@
+extends ../layout
+
+block content
+	h1 Listar Contatos
+	p Abaixo lista de contatos
+	if contatos
+		ul
+			each contato in contatos
+				li #{contato.nome}  - <a href="/contatos/#{contato._id}">  editar </a> - deletar
+	else
+		h1 nenhum contato cadastrado

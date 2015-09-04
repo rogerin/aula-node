@@ -1,0 +1,16 @@
+extends ../layout
+
+block content
+	h1 Cadastrar novo Contato
+	p Use o formulario abaixo para cadastrar novo Contato
+	p
+		form(id="form_contato", method="POST", action="/contatos")
+			label Nome
+				input(type="text", name="nome")
+			input(type="submit", value="cadastrar")
+
+
+
+block javascript
+	script(src="../javascripts/contato.js")
+			
